@@ -1,82 +1,107 @@
-$primary-color:#F48C06;
-$secondary-color: #2F327D;
-$third-color:#252641;
-$bg-header:#FFF2E1;
-$gray-dark:#6C6C6C;
-$gray-darker:#464646;
-$text-color:#696984;
-$white-color: #FFF;
-$blue-color:#65DAFF;
-$font-primary:'Poppins',sans-serif;
-$font-secondary:'Nunito Sans',sans-serif;
+$primary-color: #f48c06;
+$secondary-color: #2f327d;
+$third-color: #252641;
+$bg-header: #fff2e1;
+$gray-dark: #6c6c6c;
+$gray-darker: #464646;
+$text-color: #696984;
+$white-color: #fff;
+$blue-color: #65daff;
+$font-primary: "Poppins", sans-serif;
+$font-secondary: "Nunito Sans", sans-serif;
 $wrapper: 1920px;
+$container: 1560px;
+$purple-color: #5B72EE;
+$light-blue-color: #29B9E7;
 
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Popins/Poppins-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Popins/Poppins-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Popins/Poppins-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../../assets/fonts/Nunito_Sans/NunitoSans-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
-    overflow-x: hidden;
-    font-weight: 400;
-    font-family: $font-primary;
-    color: $text-color;
+  overflow-x: hidden;
+  font-weight: 400;
+  font-family: $font-primary;
+  color: $text-color;
 }
 
-// .wrapper {
-//     max-width: $wrapper;
-// }
+.container {
+  max-width: $container;
+  margin: 0 auto;
+}
 
 .btn {
-    display: inline-block;
-    font-size: 22px;
-    font-weight: 500;
-    font-family: $font-primary;
-    text-decoration: none;
-    padding: 13px 50px;
-    border: 0;
-    outline: none;
-    border-radius: 80px;
-    color: $gray-dark;
-    line-height: calc(33/22);
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: $font-primary;
+  text-decoration: none;
+  padding: 13px 50px;
+  border: 0;
+  outline: none;
+  border-radius: 80px;
+  color: $gray-dark;
+  line-height: calc(33 / 22);
 
-    
-    &--white {
-        background: $white-color;
-        box-shadow: 0px 20px 24px 0px rgba(0, 0, 0, 0.03);
+  &--white {
+    background: $white-color;
+    box-shadow: 0px 20px 24px 0px rgba(0, 0, 0, 0.03);
+  }
+
+  &--primary {
+    background: $primary-color;
+    color: $white-color;
+  }
+}
+
+.global {
+  &-heading {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 180%;
+    margin-bottom: 20px;
+    text-align: center;
+    color: $secondary-color;
+
+    span {
+      color: $primary-color;
     }
+  }
 
-    &--primary {
-        background: $primary-color;
-        color: $white-color;
-    }
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url('../../assets/fonts/Popins/Poppins-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url('../../assets/fonts/Popins/Poppins-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-@font-face {
-    font-family: 'Poppins';
-    src: url('../../assets/fonts/Popins/Poppins-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Nunito Sans';
-    src: url('../../assets/fonts/Nunito_Sans/NunitoSans-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  &-desc {
+    color: $text-color;
+    font-size: 24px;
+    text-align: center;
+    line-height: 180%;
+    margin: 0;
+  }
 }

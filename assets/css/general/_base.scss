@@ -13,6 +13,7 @@ $wrapper: 1920px;
 $container: 1560px;
 $purple-color: #5B72EE;
 $light-blue-color: #29B9E7;
+$orange-color: #F4B767;
 
 @font-face {
   font-family: "Poppins";
@@ -71,6 +72,8 @@ body {
   border-radius: 80px;
   color: $gray-dark;
   line-height: calc(33 / 22);
+  cursor: pointer;
+  transition: all 0.2s linear;
 
   &--white {
     background: $white-color;
@@ -80,6 +83,17 @@ body {
   &--primary {
     background: $primary-color;
     color: $white-color;
+  }
+
+  &--outline {
+    background: transparent;
+    border: 1px solid $white-color;
+    color: $white-color;
+
+    &:hover {
+      background: rgba(35, 189, 238, 0.90);
+      border: none;
+    }
   }
 }
 
@@ -103,5 +117,6 @@ body {
     text-align: center;
     line-height: 180%;
     margin: 0;
+    letter-spacing: 0.03em;
   }
 }

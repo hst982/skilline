@@ -10,7 +10,7 @@ $blue-color: #65daff;
 $font-primary: "Poppins", sans-serif;
 $font-secondary: "Nunito Sans", sans-serif;
 $wrapper: 1920px;
-$container: 1560px;
+$container: 1580px;
 $purple-color: #5B72EE;
 $light-blue-color: #29B9E7;
 $orange-color: #F4B767;
@@ -118,5 +118,25 @@ body {
     line-height: 180%;
     margin: 0;
     letter-spacing: 0.03em;
+  }
+}
+
+.btn-style-2 {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  font-family: $font-secondary;
+  font-size: 24px;
+  line-height: 180%;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  border-radius: 80px;
+  padding: 19px 38px;
+  transition: all 0.2s linear;
+  &:hover {
+    background: $white-color;
+    border: none;
   }
 }

@@ -175,10 +175,12 @@
     font-size: 36px;
     font-weight: 500;
     line-height: 160%;
+    margin-bottom: 30px;
   }
 
   .global-desc {
     text-align: start;
+    margin-bottom: 30px;
   }
 
   &-content {
@@ -231,6 +233,7 @@
       left: 50%;
       transform: translate(-50%,-50%);
       padding-left: 6px;
+      cursor: pointer;
     }
   }
 
@@ -241,4 +244,129 @@
     font-weight: 400;
     line-height: 180%;
   }
+}
+
+
+.features {
+
+  .global-heading {
+    font-size: 36px;
+  }
+
+  &-list {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+
+    .global-heading {
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 160%;
+      text-align: start;
+    }
+
+    .global-desc {
+      font-size: 22px;
+      text-align: start;
+    }
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      display: block;
+    }
+  }
+
+  &-list-child {
+    padding-top: 30px;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &-child-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: $white-color;
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: (0px 15px 44px rgba(13, 15, 28, 0.12));
+  }
+
+  &-item:nth-child(1) {
+
+    .features-image {
+      max-width: 60%;
+    }
+
+    .features-content {
+      max-width: 40%;
+      padding-left: 75px;
+    }
+  }
+
+  &-item:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
+  &-item:nth-child(2) {
+    max-width: 1441px;
+    .features-image {
+      max-width: 45%;
+    }
+
+    .features-content {
+      max-width: 55%;
+    }
+  }
+  
+  &-item:nth-child(3) {
+    max-width: 1461px;
+    .features-image {
+      max-width: 42%;
+    }
+
+    .features-content {
+      max-width: 58%;
+    }
+  }
+
+  &-item:nth-child(4) {
+    max-width: 1545px;
+    .features-image {
+      max-width: 50%;
+    }
+
+    .features-content {
+      max-width: 50%;
+    }
+  }
+
+  &-item:nth-child(5) {
+    max-width: 1486px;
+    .features-image {
+      max-width: 50%;
+    }
+
+    .features-content {
+      max-width: 50%;
+    }
+  }
+
 }

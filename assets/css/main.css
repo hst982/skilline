@@ -1059,8 +1059,110 @@ body {
   text-align: center;
 }
 .footer-top {
+  position: relative;
   display: flex;
   justify-content: center;
+  gap: 82px;
+  margin-bottom: 95px;
+}
+.footer-top::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  transform: translateX(-50%);
+  background: #626381;
+}
+.footer-heading {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.055em;
+  text-align: left;
+}
+.footer-title {
+  color: #b2b3cf;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 0.065em;
+  margin-bottom: 20px;
+}
+.footer-subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 96px;
+}
+.footer-input {
+  border-radius: 80px;
+  padding: 15px 30px;
+  font-size: 24px;
+  background: transparent;
+  border: 1px solid #83839a;
+  margin-right: 21px;
+  color: #fff;
+  width: 400px;
+}
+.footer-input::placeholder {
+  color: #83839a;
+  font-size: 24px;
+  letter-spacing: 0.05em;
+}
+.footer-button {
+  border-radius: 60px;
+  background: linear-gradient(106deg, #545ae7 19.57%, #393fcf 78.85%);
+  color: #fff;
+  padding: 14px 34px;
+  font-size: 22px;
+  border: none;
+  flex-shrink: 0;
+}
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  color: #b2b3cf;
+  font-size: 22px;
+  letter-spacing: 0.055em;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.footer-items {
+  padding: 0 20px;
+}
+.footer-items a {
+  color: inherit;
+  text-decoration: none;
+}
+.footer-items:nth-child(2) {
+  position: relative;
+}
+.footer-items:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 50%;
+  background: #626381;
+}
+.footer-items:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 50%;
+  background: #626381;
+}
+.footer-copyright {
+  color: #b2b3cf;
+  font-size: 22px;
+  letter-spacing: 0.055em;
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

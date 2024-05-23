@@ -368,6 +368,7 @@ body {
   border-radius: 80px;
   padding: 19px 38px;
   transition: all 0.2s linear;
+  cursor: pointer;
 }
 .btn-style-2:hover {
   background: #f48c06;
@@ -493,6 +494,11 @@ body {
 .company {
   padding-top: 100px;
 }
+.company .container {
+  transform: translateY(100%);
+  transition: all 0.6s ease-in-out;
+  opacity: 0;
+}
 .company-wrapper {
   max-width: 1337px;
   margin: 0 auto;
@@ -518,6 +524,11 @@ body {
 .introduce {
   padding-top: 160px;
   padding-bottom: 158px;
+}
+.introduce .container {
+  transform: translateY(100%);
+  transition: all 0.6s ease-in-out 0.8s;
+  opacity: 0;
 }
 .introduce-list {
   max-width: 1470px;
@@ -575,10 +586,16 @@ body {
 .about .global-heading {
   font-size: 44px;
   font-weight: 600;
+  transition: all 0.6s ease-in-out;
+  transform: translateY(100%);
+  opacity: 0;
 }
 .about .global-desc {
   max-width: 1101px;
   margin: 0 auto;
+  transition: all 0.6s ease-in-out 0.5s;
+  transform: translateY(100%);
+  opacity: 0;
 }
 .about-list {
   padding-top: 80px;
@@ -616,6 +633,16 @@ body {
   justify-content: center;
   gap: 17px;
 }
+.about-item:nth-child(1) {
+  transition: all 0.6s linear 1s;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.about-item:nth-child(2) {
+  transition: all 0.6s linear 1s;
+  transform: translateX(100%);
+  opacity: 0;
+}
 .about-title {
   color: #fff;
   text-align: center;
@@ -652,6 +679,9 @@ body {
   max-width: 730px;
   padding-left: 25px;
   position: relative;
+  transition: all 0.5s ease-in-out 0.5s;
+  transform: translateX(-100%);
+  opacity: 0;
 }
 .everything-content::before {
   position: absolute;
@@ -678,6 +708,9 @@ body {
 }
 .everything-image {
   position: relative;
+  transition: all 0.5s ease-in-out 0.5s;
+  transform: translateX(100%);
+  opacity: 0;
 }
 .everything-image img {
   display: block;
@@ -707,6 +740,14 @@ body {
 
 .features .global-heading {
   font-size: 36px;
+  transition: all 0.5s ease-in-out 0.5s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+.features .global-desc {
+  transition: all 0.5s ease-in-out 1s;
+  transform: translateY(100%);
+  opacity: 0;
 }
 .features-list {
   padding-top: 100px;
@@ -725,6 +766,11 @@ body {
   font-size: 22px;
   text-align: start;
 }
+.features .btn-style-2 {
+  transition: all 0.5s ease-in-out 0.5s;
+  transform: translateY(100%);
+  opacity: 0;
+}
 .features-item {
   display: flex;
   align-items: center;
@@ -740,10 +786,25 @@ body {
   flex-direction: column;
   gap: 40px;
 }
-.features-child-item {
+.features-item-child {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+.features-item-child:nth-child(1) {
+  transition: all 0.5s ease-in-out 1s;
+  transform: translateX(100%);
+  opacity: 0;
+}
+.features-item-child:nth-child(2) {
+  transition: all 0.5s ease-in-out 1.5s;
+  transform: translateX(100%);
+  opacity: 0;
+}
+.features-item-child:nth-child(3) {
+  transition: all 0.5s ease-in-out 2s;
+  transform: translateX(100%);
+  opacity: 0;
 }
 .features-icon {
   display: flex;
@@ -763,6 +824,16 @@ body {
   max-width: 40%;
   padding-left: 75px;
 }
+.features-item:nth-child(1) .features-content .global-heading {
+  transition: all 0.5s ease-in-out 0.5s;
+  transform: translateX(100%);
+  opacity: 0;
+}
+.features-item:nth-child(odd) .features-image {
+  transition: all 0.5s ease-in-out 0.5s;
+  transform: translateX(-100%);
+  opacity: 0;
+}
 .features-item:nth-of-type(even) {
   flex-direction: row-reverse;
 }
@@ -771,9 +842,25 @@ body {
 }
 .features-item:nth-child(2) .features-image {
   max-width: 45%;
+  transition: all 0.5s ease-in-out 0.5s;
+  transform: translateX(100%);
+  opacity: 0;
 }
 .features-item:nth-child(2) .features-content {
   max-width: 55%;
+  transition: all 0.5s ease-in-out 0.5s;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.features-item:nth-child(even) .features-image {
+  transition: all 0.5s ease-in-out 0.5s;
+  transform: translateX(100%);
+  opacity: 0;
+}
+.features-item:nth-child(even) .features-content {
+  transition: all 0.5s ease-in-out 0.5s;
+  transform: translateX(-100%);
+  opacity: 0;
 }
 .features-item:nth-child(3) {
   max-width: 1461px;
@@ -783,6 +870,9 @@ body {
 }
 .features-item:nth-child(3) .features-content {
   max-width: 58%;
+  transition: all 0.5s ease-in-out 0.5s;
+  transform: translateX(100%);
+  opacity: 0;
 }
 .features-item:nth-child(4) {
   max-width: 1545px;
@@ -801,11 +891,18 @@ body {
 }
 .features-item:nth-child(5) .features-content {
   max-width: 50%;
+  transition: all 0.5s ease-in-out 0.5s;
+  transform: translateX(100%);
+  opacity: 0;
 }
 
 .integrations {
   padding-top: 160px;
   padding-bottom: 170px;
+}
+.integrations .container {
+  transition: all 0.5s ease-in-out 0.5s;
+  transform: scale(0);
 }
 .integrations-inner {
   max-width: 1457px;
@@ -1064,6 +1161,7 @@ body {
   justify-content: center;
   gap: 82px;
   margin-bottom: 95px;
+  align-items: center;
 }
 .footer-top::before {
   content: "";
@@ -1163,6 +1261,66 @@ body {
   font-size: 22px;
   letter-spacing: 0.055em;
   margin: 0;
+}
+
+.in-viewport.company .container {
+  transform: translateY(0);
+  opacity: 1;
+}
+.in-viewport.introduce .container {
+  transform: translateY(0);
+  opacity: 1;
+}
+.in-viewport.about .global-heading {
+  transform: translateY(0);
+  opacity: 1;
+}
+.in-viewport.about .global-desc {
+  transform: translateY(0);
+  opacity: 1;
+}
+.in-viewport.about .about-item:nth-child(1) {
+  transform: translateX(0);
+  opacity: 1;
+}
+.in-viewport.about .about-item:nth-child(2) {
+  transform: translateX(0);
+  opacity: 1;
+}
+.in-viewport.everything .everything-content {
+  transform: translateX(0);
+  opacity: 1;
+}
+.in-viewport.everything .everything-image {
+  transform: translateX(0);
+  opacity: 1;
+}
+.in-viewport.features .global-heading {
+  transform: translateY(0);
+  opacity: 1;
+}
+.in-viewport.features .global-desc {
+  transform: translateY(0);
+  opacity: 1;
+}
+.in-viewport.features-item:nth-child(n) .features-image, .in-viewport.features-item:nth-child(n) .features-content {
+  transform: translateX(0);
+  opacity: 1;
+}
+.in-viewport.features-item .features-content .global-heading {
+  transform: translateX(0);
+  opacity: 1;
+}
+.in-viewport.features-item .features-item-child:nth-child(n) {
+  transform: translateX(0);
+  opacity: 1;
+}
+.in-viewport.integrations .container {
+  transform: scale(1);
+}
+.in-viewport.btn-style-2 {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -4,6 +4,7 @@
   clip-path: ellipse(100% 100% at top);
   //   min-height: 1118px;
   min-height: auto;
+  position: relative;
 
   &-container {
     max-width: 1725px;
@@ -110,27 +111,27 @@
     clip-path: ellipse(120% 100% at top);
 
     &-main {
-        gap: 0 20px
+      gap: 0 20px;
     }
 
     &-heading {
-        font-size: 35px;
+      font-size: 35px;
     }
 
     &-image {
-        width: 50%;
+      width: 50%;
     }
 
     &-actions .btn--primary {
-        padding: 15px 25px;
-        font-size: 20px;
-        font-weight: 600;
+      padding: 15px 25px;
+      font-size: 20px;
+      font-weight: 600;
     }
 
     .watch--icon {
-        width: 60px;
-        height: 60px;
-        padding-left: 5px;
+      width: 60px;
+      height: 60px;
+      padding-left: 5px;
     }
 
     .menu {
@@ -141,7 +142,33 @@
     .btn {
       padding: 10px 35px;
     }
+  }
 
-    
+  @media screen and (max-width: 1080px) {
+    &-actions {
+      gap: 25px;
+      flex-direction: column;
+    }
+
+    &-content {
+      width: 100%;
+      text-align: center;
+    }
+
+    &-image {
+      display: none;
+    }
+
+    &-actions {
+      padding-bottom: 80px;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    &-main {
+      padding-top: 80px;
+    }
   }
 }
